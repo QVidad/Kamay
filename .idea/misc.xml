@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/layout/activity_boot_page.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/layout/activity_boot_page.xml" value="0.144" />
+        <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.116" />
       </map>
     </option>
   </component>
