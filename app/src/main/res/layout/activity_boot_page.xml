@@ -28,23 +28,13 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="286dp"
+        android:layout_width="430dp"
+        android:layout_height="310dp"
         android:baselineAligned="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/brownfront" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="286dp"
-        android:baselineAligned="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/brownback" />
+        app:srcCompat="@drawable/ic_bottom" />
 
     <LinearLayout
         android:layout_width="411dp"
@@ -63,46 +53,27 @@
             android:gravity="center"
             android:text="Hi!"
             android:textColor="@color/white"
-            android:textSize="50sp" />
+            android:textSize="80sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="402dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="500dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="11dp">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/roboto_black"
-            android:gravity="center_horizontal"
-            android:text="KAMAY"
-            android:textColor="#f2ac3d"
-            android:textSize="45sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="132dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        tools:layout_editor_absoluteX="5dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom"
+        >
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:fontFamily="@font/roboto"
+            android:gravity="center_horizontal"
             android:text="Filipino Sign\nLanguage\nTranslator"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_marginBottom="40dp"/>
     </LinearLayout>
 
 
