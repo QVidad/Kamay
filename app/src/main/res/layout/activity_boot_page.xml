@@ -4,26 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@color/Yellow_Theme"
     tools:context=".BootPageActivity">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi!!"
+            android:textSize="80sp"
+            android:fontFamily="@font/roboto_black"
+            >
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="275dp"
-        android:layout_height="250dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="45dp"
-        android:weightSum="3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="150sp">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/bootpic" />
+            app:srcCompat="@drawable/ic_boot" />
     </LinearLayout>
 
     <ImageView
@@ -36,24 +45,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_bottom" />
 
-    <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="94dp"
-        android:layout_marginBottom="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        tools:layout_editor_absoluteX="-1dp">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:fontFamily="@font/roboto_black"
-            android:text="Hi!"
-            android:textSize="80sp" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -71,7 +63,7 @@
             android:text="Filipino Sign\nLanguage\nTranslator"
 
             android:textSize="25sp"
-            android:layout_marginBottom="40dp"/>
+            android:layout_marginBottom="50dp"/>
     </LinearLayout>
 
 
