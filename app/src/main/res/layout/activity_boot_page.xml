@@ -28,11 +28,10 @@
         android:gravity="center_vertical"
         android:layout_marginBottom="150sp">
 
-        <ImageView
-            android:id="@+id/imageView"
+        <pl.droidsonroids.gif.GifImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_boot" />
+            android:src="@drawable/anime_boot"/>
     </LinearLayout>
 
     <ImageView
