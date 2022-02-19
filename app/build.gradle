@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.kamay"
-        minSdk 21
+        minSdk 17
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -17,12 +17,15 @@ android {
         sourceSets {
             main{
                 python{
-                    srcDirs = ["src/main/python"]
+                    python.srcDirs "src/main/python"
                 }
             }
         }
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+        python {
+            buildPython "/Library/Frameworks/Python.framework/Versions/3.8/bin/python3"
         }
     }
 

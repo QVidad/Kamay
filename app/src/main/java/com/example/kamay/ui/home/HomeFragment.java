@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
 import com.example.kamay.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -24,7 +27,15 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         String Try = "Hi from java file";
-        binding.translatedText.setText(Try);
+
+        if(!Python.isStarted()){
+            Python.start(new AndroidPlatform(getContext()));
+        }
+        Python py = Python.getInstance();
+        PyObject pyobj =py.getModule("script");
+        PyObject obj = pyobj.callAttr("main");
+
+        binding.translatedText.setText(obj.toString());
         return root;
     }
 
