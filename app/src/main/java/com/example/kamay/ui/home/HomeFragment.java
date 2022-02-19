@@ -23,7 +23,8 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
+        String Try = "Hi from java file";
+        binding.translatedText.setText(Try);
         return root;
     }
 
