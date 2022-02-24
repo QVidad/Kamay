@@ -18,8 +18,7 @@ public class DashboardType extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editName=(EditText) findViewById(R.id.editName);
-        buttonClick=(Button) findViewById(R.id.buttonClick);
-        textName =(TextView) findViewById(R.id.textName);
+
 
         buttonClick.setOnClickListener(new View.OnClickListener() {
             @Override
