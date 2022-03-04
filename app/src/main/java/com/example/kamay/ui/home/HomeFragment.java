@@ -104,17 +104,16 @@ public class HomeFragment extends Fragment implements CameraBridgeViewBase.CvCam
         PyObject obj = pyobj.callAttr("main");
 
         binding.translatedText.setText(obj.toString());*/
-
+        binding.translatedText.setText("Hello from Javascript");
 
         if (ContextCompat.checkSelfPermission(HomeFragment.this.getContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
             requestPermissions(new String[]{Manifest.permission.CAMERA}, CAMERA_CODE);
         }
 
-
         mOpenCvCameraView=(CameraBridgeViewBase) root.findViewById(R.id.frame_Surface);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(HomeFragment.this);
-
+        
 
         return root;
     }
