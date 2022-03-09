@@ -8,7 +8,20 @@
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/drawable/ic_question_mark.xml" value="0.1" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
         <entry key="..\:/Users/LENOVO/Documents/GitHub/Kamay/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.23336785357931386" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/black.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_background.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_line.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_question.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_question_mark.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_send.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_transaction_history.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_type.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_videocamera.xml" value="0.163" />
+        <entry key="app/src/main/res/layout/activity_boot_page.xml" value="0.12771739130434784" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2623077392578125" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.163" />
       </map>
     </option>
   </component>
