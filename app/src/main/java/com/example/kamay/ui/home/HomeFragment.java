@@ -77,7 +77,7 @@ public class HomeFragment extends Fragment {
 
     public void checkPermission(){
         if (ContextCompat.checkSelfPermission(HomeFragment.this.getContext(), Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED) {
-            binding.camera.setText("This feature needs to use the camera. Please allow us to have access to your camera.");
+            binding.camera.setText("This feature needs to use the camera. Please give permission to the application to access your phone camera.");
             requestPermissions(new String[]{Manifest.permission.CAMERA}, CAMERA_CODE);
             button.setOnClickListener(new OnClickListener() {
                 public void onClick(View v) {

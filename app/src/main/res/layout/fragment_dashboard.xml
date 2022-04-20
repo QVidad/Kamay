@@ -33,6 +33,4 @@
             android:paddingTop="15dp"
 
             android:singleLine="true" />
-
-
 </RelativeLayout >

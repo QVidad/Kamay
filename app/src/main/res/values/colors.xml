@@ -5,4 +5,5 @@
     <color name="Yellow_Theme">#F2AC3D</color>
     <color name="Brown_Theme">#7B4635</color>
     <color name="Dark_Theme">#141d26</color>
+    <color name="Light_Background">#ECECEC</color>
 </resources>
