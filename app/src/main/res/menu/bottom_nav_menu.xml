@@ -4,16 +4,16 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_videocamera"
-        android:title="@string/title_home" />
+        android:title="Isalin" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/ic_type"
-        android:title="@string/title_dashboard" />
+        android:title="Mag-type" />
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_question_mark"
-        android:title="About" />
+        android:icon="@drawable/ic_transaction_history"
+        android:title="Kasaysayan" />
 
 </menu>

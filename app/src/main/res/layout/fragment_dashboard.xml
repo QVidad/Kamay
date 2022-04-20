@@ -24,7 +24,7 @@
             android:backgroundTint="@color/material_on_background_disabled"
             android:ems="10"
             android:gravity="top|left"
-            android:hint="Type here.."
+            android:hint="Mag-type dito"
 
 
             android:inputType="textMultiLine"
