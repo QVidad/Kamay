@@ -57,6 +57,7 @@ public class HomeFragment extends Fragment {
 
     private SolutionGlSurfaceView<HandsResult> glSurfaceView;
     private Button button;
+    public Boolean isFLip = false;
 
     public HomeFragment(){
         Log.i(TAG,"Instantiated new "+this.getClass());
@@ -69,8 +70,9 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-        button = binding.cameraButton;
         checkPermission();
+        getFlipValue();
+        getTranslatedText();
 
         return root;
     }
@@ -180,10 +182,26 @@ public class HomeFragment extends Fragment {
         cameraInput.start(
                 this.getActivity(),
                 hands.getGlContext(),
-                CameraInput.CameraFacing.BACK,
+                getCameraValue(),
                 glSurfaceView.getWidth(),
                 glSurfaceView.getHeight());
         Toast.makeText(HomeFragment.this.getContext(), "Scanning", Toast.LENGTH_SHORT).show();
+    }
+    /** For the FLip Camera Feature */
+    private CameraInput.CameraFacing getCameraValue(){
+        if (isFLip == true){
+            return CameraInput.CameraFacing.FRONT;
+        } else {
+            return CameraInput.CameraFacing.BACK;
+        }
+    }
+    public void getFlipValue(){
+        binding.flip.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                isFLip = !isFLip;
+                startCamera();
+            }
+        });
     }
 
     private void stopCurrentPipeline() {
@@ -214,6 +232,7 @@ public class HomeFragment extends Fragment {
                     String.format(
                             "MediaPipe Hand wrist coordinates (pixel values): x=%f, y=%f",
                             wristLandmark.getX() * width, wristLandmark.getY() * height));
+            binding.translatedText.setText("This feature needs to use the camera. Please give permission to the application to access your phone camera.");
         } else {
             Log.i(
                     TAG,
@@ -232,5 +251,9 @@ public class HomeFragment extends Fragment {
                         "MediaPipe Hand wrist world coordinates (in meters with the origin at the hand's"
                                 + " approximate geometric center): x=%f m, y=%f m, z=%f m",
                         wristWorldLandmark.getX(), wristWorldLandmark.getY(), wristWorldLandmark.getZ()));
+    }
+
+    public void getTranslatedText() {
+        binding.translatedText.setText("Dito ang translation");
     }
 }

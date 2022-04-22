@@ -44,5 +44,14 @@
                 android:id="@+id/translated_text"
                 android:textSize="30dp"></TextView>
         </LinearLayout>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_flip_camera"
+            android:id="@+id/flip"
+            ></ImageButton>
     </FrameLayout>
 </LinearLayout>
