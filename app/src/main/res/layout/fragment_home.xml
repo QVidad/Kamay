@@ -42,8 +42,7 @@
                 android:layout_height="match_parent"
                 android:padding="10dp"
                 android:id="@+id/translated_text"
-                android:textSize="30dp"
-                android:text="Translation here"></TextView>
+                android:textSize="30dp"></TextView>
         </LinearLayout>
     </FrameLayout>
 </LinearLayout>
